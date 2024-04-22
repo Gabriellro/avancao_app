@@ -1,0 +1,8 @@
+export 'is_auth_page.dart';
+export 'auth/auth_page.dart';
+export 'bottom_nav_bar.dart';
+export 'home/home_page.dart';
+export 'coworking/coworking_page.dart';
+export 'menu/menu_page.dart';
+export 'user/user_page.dart';
+export 'exercicios/exercicios_page.dart';
