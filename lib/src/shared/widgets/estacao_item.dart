@@ -37,20 +37,21 @@ class _EstacaoItemState extends State<EstacaoItem> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              width: 92,
-              height: 92,
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.surface,
-                border: Border.all(
-                  width: selectEstacao! ? 4 : 0,
-                  color: selectEstacao!
-                      ? Theme.of(context).colorScheme.tertiaryContainer
-                      : Colors.transparent,
+                width: 92,
+                height: 92,
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.surface,
+                  border: Border.all(
+                    width: selectEstacao! ? 4 : 0,
+                    color: selectEstacao!
+                        ? Theme.of(context).colorScheme.tertiaryContainer
+                        : Colors.transparent,
+                  ),
+                  borderRadius: BorderRadius.circular(12),
                 ),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: widget.estacaoTrabalhoModel.icon,
-            ),
+                child: Icon(
+                  widget.estacaoTrabalhoModel.icon,
+                )),
             const SizedBox(height: 4),
             Text(
               widget.estacaoTrabalhoModel.nome ?? 'Disponivel',

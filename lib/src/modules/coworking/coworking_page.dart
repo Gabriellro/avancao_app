@@ -155,7 +155,7 @@ class _CoworkingPageState extends State<CoworkingPage>
                   controller: _tabController,
                   tabs: _myTabs,
                   tabAlignment: TabAlignment.start,
-                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   indicatorPadding: const EdgeInsets.only(top: 5, bottom: 7),
                   unselectedLabelColor: Theme.of(context).colorScheme.onSurface,
                   labelPadding: const EdgeInsets.symmetric(horizontal: 16),

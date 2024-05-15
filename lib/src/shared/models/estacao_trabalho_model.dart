@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class EstacaoTrabalhoModel {
   String? id;
   final String type;
-  final Icon icon;
+  final IconData icon;
   final String nomeEstacao;
   final String? nome;
   final bool ativo;

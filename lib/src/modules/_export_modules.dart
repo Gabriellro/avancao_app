@@ -6,3 +6,4 @@ export 'coworking/coworking_page.dart';
 export 'menu/menu_page.dart';
 export 'user/user_page.dart';
 export 'exercicios/exercicios_page.dart';
+export 'loja/loja_page.dart';

@@ -31,15 +31,16 @@ class _AgenteItemState extends State<AgenteItem> {
             clipBehavior: Clip.none,
             children: [
               Container(
-                width: 40,
-                height: 40,
-                decoration: ShapeDecoration(
-                  color: Theme.of(context).colorScheme.surface,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8)),
-                ),
-                child: widget.agenteModel.icon,
-              ),
+                  width: 40,
+                  height: 40,
+                  decoration: ShapeDecoration(
+                    color: Theme.of(context).colorScheme.surface,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8)),
+                  ),
+                  child: Icon(
+                    widget.agenteModel.icon,
+                  )),
             ],
           ),
           title: Row(

@@ -40,6 +40,7 @@ class HomePage extends StatelessWidget {
               width: double.infinity,
               color: Theme.of(context).colorScheme.surface,
               child: CalendarDatePicker(
+                initialCalendarMode: DatePickerMode.day,
                 initialDate: DateTime.now(),
                 firstDate: DateTime(2010),
                 lastDate: DateTime(2100),

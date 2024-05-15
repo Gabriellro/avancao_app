@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '_export_modules.dart';
+import 'calendar/calendar_page.dart';
 
 class BottomNavBar extends StatefulWidget {
   static const routeName = '/BottomNavBar';
@@ -14,9 +15,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
-    HomePage(),
+    CalendarPage(),
     CoworkingPage(),
-    Scaffold(),
+    LojaPage(),
     MenuPage()
   ];
 

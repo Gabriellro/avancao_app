@@ -127,8 +127,8 @@ class _UserPageState extends State<UserPage> {
                 }
 
                 if (store.erro.value.isNotEmpty) {
-                  return Center(
-                    child: Text(store.erro.value),
+                  return const Center(
+                    child: Text("Erro de Conexão"),
                   );
                 }
 

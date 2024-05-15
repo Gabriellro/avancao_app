@@ -25,15 +25,19 @@ class _EstacaoTrabalhoItemState extends State<EstacaoTrabalhoItem> {
             clipBehavior: Clip.none,
             children: [
               Container(
-                width: 40,
-                height: 40,
-                decoration: ShapeDecoration(
-                  color: Theme.of(context).colorScheme.onInverseSurface,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8)),
-                ),
-                child: widget.estacaoTrabalhoModel.icon,
-              ),
+                  width: 40,
+                  height: 40,
+                  decoration: ShapeDecoration(
+                    color: Theme.of(context).colorScheme.surface,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8)),
+                  ),
+                  child: Icon(
+                    widget.estacaoTrabalhoModel.icon,
+                    color: widget.estacaoTrabalhoModel.type == "DS"
+                        ? Theme.of(context).colorScheme.error
+                        : Theme.of(context).colorScheme.primary,
+                  )),
             ],
           ),
           const SizedBox(width: 16),
