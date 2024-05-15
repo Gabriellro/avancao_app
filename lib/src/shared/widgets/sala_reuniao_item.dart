@@ -59,12 +59,13 @@ class _SalaReuniaoItemState extends State<SalaReuniaoItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Theme.of(context).colorScheme.background,
+      color: Theme.of(context).colorScheme.surface,
       child: ExpandablePanel(
-        theme: const ExpandableThemeData(
+        theme: ExpandableThemeData(
           useInkWell: true,
           hasIcon: true,
-          iconPadding: EdgeInsets.only(top: 28, right: 16),
+          iconPadding: const EdgeInsets.only(top: 28, right: 16),
+          iconColor: Theme.of(context).colorScheme.onSurface,
         ),
         header: SizedBox(
           height: 58,
@@ -75,15 +76,17 @@ class _SalaReuniaoItemState extends State<SalaReuniaoItem> {
               clipBehavior: Clip.none,
               children: [
                 Container(
-                  width: 40,
-                  height: 40,
-                  decoration: ShapeDecoration(
-                    color: Theme.of(context).colorScheme.onInverseSurface,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
-                  ),
-                  child: widget.salaReuniaoModel.icon,
-                ),
+                    width: 40,
+                    height: 40,
+                    decoration: ShapeDecoration(
+                      color: Theme.of(context).colorScheme.surface,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                    ),
+                    child: Icon(
+                      widget.salaReuniaoModel.icon,
+                      color: Theme.of(context).colorScheme.primary,
+                    )),
               ],
             ),
             title: Text(

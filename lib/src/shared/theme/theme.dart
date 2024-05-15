@@ -6,7 +6,7 @@ ThemeData get lightTheme => ThemeData(
     colorScheme: _lightColorScheme,
     appBarTheme: const AppBarTheme(titleSpacing: 0),
     radioTheme: RadioThemeData(
-      fillColor: MaterialStateProperty.all(
+      fillColor: WidgetStateProperty.all(
         _lightColorScheme.primary,
       ),
     ),
@@ -24,7 +24,7 @@ ThemeData get darkTheme => ThemeData(
       colorScheme: _darkColorScheme,
       appBarTheme: const AppBarTheme(titleSpacing: 0),
       radioTheme: RadioThemeData(
-        fillColor: MaterialStateProperty.all(
+        fillColor: WidgetStateProperty.all(
           _darkColorScheme.primary,
         ),
       ),

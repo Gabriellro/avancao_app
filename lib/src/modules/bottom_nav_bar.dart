@@ -74,7 +74,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           selectedItemColor: Theme.of(context).colorScheme.primary,
           unselectedItemColor: Theme.of(context).colorScheme.outlineVariant,
           showUnselectedLabels: true,
-          backgroundColor: Theme.of(context).colorScheme.surface,
+          backgroundColor: Theme.of(context).colorScheme.surfaceContainerLowest,
           currentIndex: _selectedIndex,
           landscapeLayout: BottomNavigationBarLandscapeLayout.centered,
           onTap: _onItemTapped,

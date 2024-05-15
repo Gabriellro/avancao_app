@@ -19,7 +19,7 @@ class _AgenteItemState extends State<AgenteItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Theme.of(context).colorScheme.background,
+      color: Theme.of(context).colorScheme.surface,
       child: ExpandablePanel(
         theme: const ExpandableThemeData(
           hasIcon: false,

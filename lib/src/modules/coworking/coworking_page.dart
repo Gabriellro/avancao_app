@@ -64,7 +64,7 @@ class _CoworkingPageState extends State<CoworkingPage>
       length: _myTabs.length,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.surface,
+          backgroundColor: Theme.of(context).colorScheme.surfaceContainerLowest,
           elevation: 0,
           leadingWidth: isSearch ? 50 : 0,
           leading: Visibility(
@@ -146,7 +146,7 @@ class _CoworkingPageState extends State<CoworkingPage>
               child: Container(
                 height: 64,
                 width: double.infinity,
-                color: Theme.of(context).colorScheme.surface,
+                color: Theme.of(context).colorScheme.surfaceContainerLowest,
                 child: TabBar(
                   dividerColor: Colors.transparent,
                   indicatorSize: TabBarIndicatorSize.tab,
@@ -173,7 +173,7 @@ class _CoworkingPageState extends State<CoworkingPage>
               visible: _tabController.index != 3,
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-                color: Theme.of(context).colorScheme.surface,
+                color: Theme.of(context).colorScheme.surfaceContainerLowest,
                 child: WeeklyDatePicker(
                   selectedDay: _selectedDay,
                   changeDay: (value) => setState(() {
@@ -183,7 +183,8 @@ class _CoworkingPageState extends State<CoworkingPage>
                   weekdayTextColor:
                       Theme.of(context).colorScheme.onSurfaceVariant,
                   weeknumberTextColor: Theme.of(context).colorScheme.onSurface,
-                  backgroundColor: Theme.of(context).colorScheme.surface,
+                  backgroundColor:
+                      Theme.of(context).colorScheme.surfaceContainerLowest,
                   digitsColor: Theme.of(context).colorScheme.onSurface,
                   selectedDigitColor: Theme.of(context).colorScheme.onPrimary,
                   selectedDigitBackgroundColor:

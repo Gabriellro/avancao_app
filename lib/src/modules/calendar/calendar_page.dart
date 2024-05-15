@@ -55,7 +55,7 @@ class _CalendarPageState extends State<CalendarPage>
 
   //Obtém os eventos de dia determinado
   List<dynamic> _getEventsForDay(DateTime date) {
-    return _groupedEvents![date] ?? [];
+    return _groupedEvents?[date] ?? [];
   }
 
   ///Função para adcionar os horários ao calendário.
@@ -78,8 +78,8 @@ class _CalendarPageState extends State<CalendarPage>
   Widget build(BuildContext context) {
     if (load == false) {
       return Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
         appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.surfaceContainerLowest,
           title: Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Text(
@@ -108,7 +108,10 @@ class _CalendarPageState extends State<CalendarPage>
                       _focusedDay = DateTime.now();
                     });
                   },
-                  icon: const Icon(Icons.check_box_outline_blank_rounded),
+                  icon: const Icon(
+                    Icons.check_box_outline_blank_rounded,
+                    size: 28,
+                  ),
                 ),
               ],
             ),
@@ -122,8 +125,8 @@ class _CalendarPageState extends State<CalendarPage>
       );
     } else {
       return Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
         appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.surfaceContainerLowest,
           title: Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Text(
@@ -156,7 +159,10 @@ class _CalendarPageState extends State<CalendarPage>
                         _focusedDay = DateTime.now();
                       });
                     },
-                    icon: const Icon(Icons.check_box_outline_blank_rounded),
+                    icon: const Icon(
+                      Icons.check_box_outline_blank_rounded,
+                      size: 28,
+                    ),
                   ),
                 ],
               ),
@@ -169,7 +175,7 @@ class _CalendarPageState extends State<CalendarPage>
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8),
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.surface,
+                color: Theme.of(context).colorScheme.surfaceContainerLowest,
               ),
               child: TableCalendar(
                 locale: 'pt_BR', //Traduzindo os meses

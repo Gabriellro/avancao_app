@@ -49,7 +49,7 @@ class _MenuPageState extends State<MenuPage> {
         child: Column(
           children: [
             Container(
-              color: Theme.of(context).colorScheme.surface,
+              color: Theme.of(context).colorScheme.surfaceContainerLowest,
               padding: const EdgeInsets.only(top: 32, bottom: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -151,7 +151,8 @@ class _MenuPageState extends State<MenuPage> {
                   const SizedBox(height: 12),
                   Container(
                     decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.surface,
+                      color:
+                          Theme.of(context).colorScheme.surfaceContainerLowest,
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: ListView.builder(
@@ -161,7 +162,10 @@ class _MenuPageState extends State<MenuPage> {
                       itemBuilder: (ctx, i) => InkWell(
                         onTap: () {},
                         child: ListTile(
-                          leading: dummyAdmCategorias[i].icon,
+                          leading: Icon(
+                            dummyAdmCategorias[i].icon,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                           title: Text(dummyAdmCategorias[i].nome),
                           trailing: const Icon(
                             Icons.keyboard_arrow_right_rounded,
@@ -192,7 +196,8 @@ class _MenuPageState extends State<MenuPage> {
                   const SizedBox(height: 12),
                   Container(
                     decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.surface,
+                      color:
+                          Theme.of(context).colorScheme.surfaceContainerLowest,
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Column(

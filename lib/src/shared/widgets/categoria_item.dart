@@ -21,7 +21,7 @@ class CategoriaItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
         decoration: ShapeDecoration(
-          color: Theme.of(context).colorScheme.inverseSurface,
+          color: Theme.of(context).colorScheme.surfaceContainer,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
@@ -31,7 +31,10 @@ class CategoriaItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            categoriaModel.icon,
+            Icon(
+              categoriaModel.icon,
+              color: Theme.of(context).colorScheme.primary,
+            ),
             Text(
               categoriaModel.nome,
               textAlign: TextAlign.center,

@@ -133,11 +133,7 @@ List<SalaReuniaoModel> dummySalaReuniao = [
     nomeSala: 'Sala',
     nome: 'Alcides Junqueira',
     ativo: false,
-    icon: const Icon(
-      Icons.meeting_room_rounded,
-      size: 24,
-      color: Color(0xFF0005AA),
-    ),
+    icon: Icons.meeting_room_rounded,
     dataAgendamento: DateTime(2023, 09, 18),
     dataRegistro: DateTime(2023, 09, 18),
   ),
@@ -147,11 +143,7 @@ List<SalaReuniaoModel> dummySalaReuniao = [
     nomeSala: 'Sala',
     nome: 'Adilson Badaró',
     ativo: true,
-    icon: const Icon(
-      Icons.meeting_room_rounded,
-      size: 24,
-      color: Color(0xFF0005AA),
-    ),
+    icon: Icons.meeting_room_rounded,
     dataAgendamento: DateTime(2023, 09, 18),
     dataRegistro: DateTime(2023, 09, 18),
   ),
@@ -164,11 +156,7 @@ List<SalaReuniaoModel> dummyEstacionamento = [
     nomeSala: 'G',
     nome: 'Alcides Junqueira',
     ativo: false,
-    icon: const Icon(
-      Icons.directions_car_rounded,
-      size: 24,
-      color: Color(0xFF0005AA),
-    ),
+    icon: Icons.directions_car_rounded,
     dataAgendamento: DateTime(2023, 09, 18),
     dataRegistro: DateTime(2023, 09, 18),
   ),
@@ -178,11 +166,7 @@ List<SalaReuniaoModel> dummyEstacionamento = [
     nomeSala: 'G',
     nome: 'Adilson Badaró',
     ativo: true,
-    icon: const Icon(
-      Icons.directions_car_rounded,
-      size: 24,
-      color: Color(0xFF0005AA),
-    ),
+    icon: Icons.directions_car_rounded,
     dataAgendamento: DateTime(2023, 09, 18),
     dataRegistro: DateTime(2023, 09, 18),
   ),
@@ -192,11 +176,7 @@ List<SalaReuniaoModel> dummyEstacionamento = [
     nomeSala: 'G',
     nome: 'Adilson Badaró',
     ativo: true,
-    icon: const Icon(
-      Icons.directions_car_rounded,
-      size: 24,
-      color: Color(0xFF0005AA),
-    ),
+    icon: Icons.directions_car_rounded,
     dataAgendamento: DateTime(2023, 09, 18),
     dataRegistro: DateTime(2023, 09, 18),
   ),
@@ -206,11 +186,7 @@ List<SalaReuniaoModel> dummyEstacionamento = [
     nomeSala: 'G',
     nome: 'Adilson Badaró',
     ativo: true,
-    icon: const Icon(
-      Icons.directions_car_rounded,
-      size: 24,
-      color: Color(0xFF0005AA),
-    ),
+    icon: Icons.directions_car_rounded,
     dataAgendamento: DateTime(2023, 09, 18),
     dataRegistro: DateTime(2023, 09, 18),
   ),
@@ -220,11 +196,7 @@ List<SalaReuniaoModel> dummyEstacionamento = [
     nomeSala: 'G',
     nome: 'Adilson Badaró',
     ativo: true,
-    icon: const Icon(
-      Icons.directions_car_rounded,
-      size: 24,
-      color: Color(0xFF0005AA),
-    ),
+    icon: Icons.directions_car_rounded,
     dataAgendamento: DateTime(2023, 09, 18),
     dataRegistro: DateTime(2023, 09, 18),
   ),
@@ -530,76 +502,44 @@ List<ExerciciosModel> dummyExercicios = [
 ];
 List<CategoriaModel> dummyCategorias = [
   CategoriaModel(
-    icon: const Icon(
-      Icons.assignment_ind_rounded,
-      size: 24,
-      color: Color(0XFF0005AA),
-    ),
+    icon: Icons.assignment_ind_rounded,
     nome: 'Dados Pessoais',
     routePage: '/FeriasPage',
   ),
   CategoriaModel(
-    icon: const Icon(
-      Icons.airplane_ticket_rounded,
-      size: 24,
-      color: Color(0XFF0005AA),
-    ),
+    icon: Icons.airplane_ticket_rounded,
     nome: 'Férias',
     routePage: '/FeriasPage',
   ),
   CategoriaModel(
-    icon: const Icon(
-      Icons.list_alt_rounded,
-      size: 24,
-      color: Color(0XFF0005AA),
-    ),
+    icon: Icons.list_alt_rounded,
     nome: 'Folha de Ponto',
     routePage: '/FeriasPage',
   ),
   CategoriaModel(
-    icon: const Icon(
-      Icons.receipt_rounded,
-      size: 24,
-      color: Color(0XFF0005AA),
-    ),
+    icon: Icons.receipt_rounded,
     nome: 'Contra-check',
     routePage: '/FeriasPage',
   ),
 ];
 List<CategoriaModel> dummyAdmCategorias = [
   CategoriaModel(
-    icon: const Icon(
-      Icons.groups_rounded,
-      size: 24,
-      color: Color(0XFF0005AA),
-    ),
+    icon: Icons.groups_rounded,
     nome: 'Grupo de Usuários',
     routePage: '/UserPage',
   ),
   CategoriaModel(
-    icon: const Icon(
-      Icons.group_rounded,
-      size: 24,
-      color: Color(0XFF0005AA),
-    ),
+    icon: Icons.group_rounded,
     nome: 'Squads',
     routePage: '/UserPage',
   ),
   CategoriaModel(
-    icon: const Icon(
-      Icons.badge_rounded,
-      size: 24,
-      color: Color(0XFF0005AA),
-    ),
+    icon: Icons.badge_rounded,
     nome: 'Cargos',
     routePage: '/UserPage',
   ),
   CategoriaModel(
-    icon: const Icon(
-      Icons.manage_accounts_rounded,
-      size: 24,
-      color: Color(0XFF0005AA),
-    ),
+    icon: Icons.manage_accounts_rounded,
     nome: 'Usuarios',
     routePage: '/UserPage',
   ),

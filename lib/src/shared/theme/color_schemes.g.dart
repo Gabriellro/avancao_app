@@ -8,6 +8,10 @@ const _lightColorScheme = ColorScheme(
   onPrimary: Color(0xFFFFFFFF),
   primaryContainer: Color(0xFFE0E0FF),
   onPrimaryContainer: Color(0xFF00026C),
+  primaryFixed: Color(0xFFE0E0FF),
+  primaryFixedDim: Color(0xFFBEC2FF),
+  onPrimaryFixed: Color(0xFF00026C),
+  onPrimaryFixedVariant: Color(0xFF242DC3),
 
   // Secondary
   secondary: Color(0xFF5C5D72),
@@ -28,11 +32,19 @@ const _lightColorScheme = ColorScheme(
   onErrorContainer: Color(0xFF410000),
 
   // Surface
-  surface: Color(0xFFFFFFFF),
+  surfaceDim: Color(0xFFDCD9DE),
+  surface: Color(0xFFFCF8FD),
+  surfaceBright: Color(0xFFFCF8FD),
   onSurface: Color(0xFF1B1B1F),
-  surfaceVariant: Color(0xFFE3E1EC),
   onSurfaceVariant: Color(0xFF46464F),
   surfaceTint: Color(0xFF414BDB),
+
+  // Surface conteiners
+  surfaceContainerLowest: Color(0xFFFFFFFF),
+  surfaceContainerLow: Color(0xFFF6F2F7),
+  surfaceContainer: Color(0xFFF0EDF1),
+  surfaceContainerHigh: Color(0xFFEAE7EC),
+  surfaceContainerHighest: Color(0xFFE5E1E6),
 
   // Inverse
   inverseSurface: Color(0xFFF3EFF4),
@@ -44,8 +56,7 @@ const _lightColorScheme = ColorScheme(
   outlineVariant: Color(0xFFC7C5D0),
 
   // add-ons
-  background: Color(0xFFFCF8FD),
-  onBackground: Color(0xFF1B1B1F),
+
   scrim: Color(0xFF000000),
   shadow: Color(0xFF000000),
 );
@@ -58,6 +69,10 @@ const _darkColorScheme = ColorScheme(
   onPrimary: Color(0xFF0005AA),
   primaryContainer: Color(0xFF242DC3),
   onPrimaryContainer: Color(0xFFE0E0FF),
+  primaryFixed: Color(0xFFE0E0FF),
+  primaryFixedDim: Color(0xFFBEC2FF),
+  onPrimaryFixed: Color(0xFF00026C),
+  onPrimaryFixedVariant: Color(0xFF242DC3),
 
   // Secondary
   secondary: Color(0xFFC5C4DD),
@@ -78,14 +93,22 @@ const _darkColorScheme = ColorScheme(
   onErrorContainer: Color(0xFFFFDAD4),
 
   // Surface
+  surfaceDim: Color(0xFF131316),
   surface: Color(0xFF131316),
+  surfaceBright: Color(0xFF39393C),
   onSurface: Color(0xFFC8C5CA),
-  surfaceVariant: Color(0xFF46464F),
   onSurfaceVariant: Color(0xFFC7C5D0),
   surfaceTint: Color(0xFFBEC2FF),
 
+  // Surface conteiners
+  surfaceContainerLowest: Color(0xFF0E0E11),
+  surfaceContainerLow: Color(0xFF1B1B1F),
+  surfaceContainer: Color(0xFF1F1F23),
+  surfaceContainerHigh: Color(0xFF2A2A2D),
+  surfaceContainerHighest: Color(0xFF353438),
+
   // Inverse
-  inverseSurface: Color(0xFF1F1F23),
+  inverseSurface: Color(0xFFE5E1E6),
   onInverseSurface: Color(0xFF1B1B1F),
   inversePrimary: Color(0xFF414BDB),
 
@@ -94,8 +117,6 @@ const _darkColorScheme = ColorScheme(
   outlineVariant: Color(0xFF46464F),
 
   // add-ons
-  background: Color(0xFF1B1B1F),
-  onBackground: Color(0xFFE5E1E6),
   shadow: Color(0xFF000000),
   scrim: Color(0xFF000000),
 );

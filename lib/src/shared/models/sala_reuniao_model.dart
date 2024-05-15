@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class SalaReuniaoModel {
   String? id;
   final String type;
-  final Icon icon;
+  final IconData icon;
   final String nomeSala;
   final String? nome;
   final bool ativo;

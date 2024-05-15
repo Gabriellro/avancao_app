@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CategoriaModel {
-  final Icon icon;
+  final IconData icon;
   final String nome;
   final String routePage;
 
